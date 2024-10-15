@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(209, 209, 209);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+  
+}
+
+.calculator{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div h2{
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.first_number input, .second_number input{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+   font-weight: bold;
+    
+}
+
+.equalto input{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 185px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.844);
+    border: 0;
+}
+.display input[type=text]:read-only{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 185px;
+    background-color: grey;
+    color: blue;
+    border: 0;
+    font-size: 32px;
+    font-weight: 400;
+
+}
+.operator button{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    width: 45px;
+    height: 39px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(243, 76, 76);
+    border: 0;
+}
