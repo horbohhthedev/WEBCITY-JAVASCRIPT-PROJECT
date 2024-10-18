@@ -23,6 +23,9 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
+    box-shadow: 5px 0px 3px 2px rgb(243, 76, 76);
+    margin-top: 150px;
+    border-radius: 8px;
    
   
 }
@@ -48,6 +51,8 @@ div h2{
     margin: 10px;
     text-align: center;
    font-weight: bold;
+   border-radius: 4px;
+   height: 41px;
     
 }
 
@@ -56,23 +61,26 @@ div h2{
     margin: 10px;
     text-align: center;
     width: 185px;
+    height: 41px;
     font-size: 20px;
     font-weight: bold;
     color: white;
     background-color: rgba(255, 0, 0, 0.844);
     border: 0;
+    border-radius: 4px;
 }
 .display input[type=text]:read-only{
     padding: 10px;
     margin: 10px;
     text-align: center;
     width: 185px;
+    height: 41px;
     background-color: grey;
     color: blue;
     border: 0;
     font-size: 32px;
     font-weight: 400;
-
+    border-radius: 4px;
 }
 .operator button{
     padding: 5px;
@@ -85,4 +93,49 @@ div h2{
     color: rgb(255, 255, 255);
     background-color: rgb(243, 76, 76);
     border: 0;
+    border-radius: 5px;
+}
+
+select{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    width: 45px;
+    height: 39px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(243, 76, 76);
+    border: 0;
+    border-radius: 5px;
+}
+select:focus{
+    background-color: #f1f1f1;
+    color: rgb(243, 76, 76);
+    
+}
+
+/* LARGE SCREEN */
+@media only screen and (min-width:561px){
+    .mb{
+        display: none;
+
+    }
+    
+}
+
+/* MOBILE SCREEN */
+@media only screen and (max-width:560px){
+    .lg{
+        display: none;
+    }
+    .container{
+        border: 5px solid #000000af;
+        height: auto;
+    }
+    .calculator{
+        display: block;
+    }
+   
+  
 }
